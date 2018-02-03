@@ -6,7 +6,6 @@ package com.lios.check.enums;
  */
 public enum CheckEnum {
     /**
-     * 用于贷经纪渠道流量开放平台
      * 当处理的参数为JSONObject类型时,需要通过写POJO类
      * 序列化成对象,注意:
      * POJO对象中的属性值只能为String、具体定义的JavaBean类型,
