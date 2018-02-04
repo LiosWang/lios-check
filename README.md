@@ -1,6 +1,7 @@
 ### 用于信息参数校验
 
-1. 支持的校验类型
+1. **支持的校验类型**
+---
    * 是否为空
    * 身份证号是否合法
    * 手机号是否合法
@@ -8,7 +9,8 @@
    * 是否为整数
    * 金额判断(可定制)
    * 枚举判断
-2. spring项目使用示例
+2. **spring项目使用示例**
+---
    * 引入   
    ```
    <bean class="com.lios.check.service.CheckFieldService" id="checkFieldService"/>
