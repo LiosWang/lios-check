@@ -40,7 +40,7 @@
    * 切点
    ```
        @CheckField(value = CheckEnum.JSON_OBJECT)
-       public OpenApiResponse<OpenOrderStatusFeedBackVO> orderPush(Object openApiJsonObject, String appId) {
+       public OpenApiResponse<OpenOrderStatusFeedBackVO> orderPush(JSONObject jsonObject, String appId) {
           ...
           ...
        }
