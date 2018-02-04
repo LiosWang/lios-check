@@ -9,7 +9,7 @@
    * 金额判断(可定制)
    * 枚举判断
 2. spring项目使用示例
-   * 引入  
+   * 引入   
    ```
    <bean class="com.lios.check.service.CheckFieldService" id="checkFieldService"/>
    ```
