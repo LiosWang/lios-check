@@ -1,6 +1,8 @@
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/annotation/IsMobile.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/utils/MobileUtil.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/service/CheckFieldService.java
+/Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/dto/OpenOrderBaseInfoDTO.java
+/Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/enums/GenderEnum.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/annotation/EnumValue.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/annotation/IsInt.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/enums/CheckEnum.java

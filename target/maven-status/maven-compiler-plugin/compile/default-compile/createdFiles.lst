@@ -9,10 +9,12 @@ com/lios/check/utils/MobileUtil.class
 com/lios/check/annotation/IsInt.class
 com/lios/check/utils/IdCardUtil.class
 com/lios/check/interfaces/CheckEnumInterface.class
+com/lios/check/dto/OpenOrderBaseInfoDTO.class
 com/lios/check/annotation/NotEmpty.class
 com/lios/check/enums/CheckEnum.class
 com/lios/check/consts/ConstCharacters.class
 com/lios/check/annotation/IsIdCard.class
+com/lios/check/enums/GenderEnum.class
 com/lios/check/annotation/IsNumber.class
 com/lios/check/annotation/CheckField.class
 com/lios/check/consts/CheckFieldConst.class

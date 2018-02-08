@@ -1,7 +1,4 @@
 package com.lios.check.consts;
-
-
-
 /**
  * @author wenchao.wang
  * @description
@@ -36,6 +33,6 @@ public class CheckFieldConst {
 
     public static final String AMOUNT_IS_NOT_ALLOW = "%s不能低于1000";
 
-    public static final String ENUM_VALUE_IS_ERROR = "%s字段取值错误,枚举值应为%s";
+    public static final String ENUM_VALUE_IS_ERROR = "%s字段取值错误,枚举值应为 %s";
 
 }
