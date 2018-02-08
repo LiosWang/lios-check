@@ -1,17 +1,19 @@
 package com.lios.check.service;
+
 import com.lios.check.annotation.*;
 import com.lios.check.consts.CheckFieldConst;
+import com.lios.check.enums.CheckEnum;
+import com.lios.check.interfaces.CheckEnumInterface;
 import com.lios.check.utils.IdCardUtil;
 import com.lios.check.utils.MobileUtil;
 import com.lios.check.utils.StringUtils;
 import org.apache.commons.lang3.ArrayUtils;
+import org.springframework.stereotype.Component;
+
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Objects;
-import com.lios.check.enums.CheckEnum;
+import java.util.*;
+
 /**
  * @author wenchao.wang
  * @description 参数信息校验
@@ -24,10 +26,11 @@ import com.lios.check.enums.CheckEnum;
  * @see IsMobile
  * @see IsNumber
  * @see IsInt
- * @see EnumValue
+ * @see
  * @see AmountLimit
  */
-public class CheckFieldService<T extends RuntimeException>{
+@Component
+public class CheckFieldService<T extends RuntimeException> {
 
     public void check(Object obj) throws Exception {
         Class<?> cls = obj.getClass();
@@ -177,9 +180,12 @@ public class CheckFieldService<T extends RuntimeException>{
     private void checkEnumValue(Field f, Object obj) {
         if (!Objects.isNull(obj)) {
             EnumValue enumValue = f.getAnnotation(EnumValue.class);
-            String[] values = (enumValue.value()).split(",");
-            if (!ArrayUtils.contains(values, obj)) {
-                throw (T) (new RuntimeException(String.format(CheckFieldConst.ENUM_VALUE_IS_ERROR, enumValue.name(),enumValue.value())));
+            StringBuilder builder = new StringBuilder();
+            for (CheckEnumInterface c : enumValue.value().getEnumConstants()) {
+                builder.append(c.getValue() + ",");
+            }
+            if (!ArrayUtils.contains(builder.toString().split(","), obj)) {
+                throw (T) (new RuntimeException(String.format(CheckFieldConst.ENUM_VALUE_IS_ERROR, enumValue.name(), builder.deleteCharAt(builder.length() - 1))));
             }
         }
     }

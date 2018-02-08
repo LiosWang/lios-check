@@ -1,5 +1,7 @@
 package com.lios.check.annotation;
 
+import com.lios.check.interfaces.CheckEnumInterface;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -13,6 +15,6 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EnumValue {
-    String value() default "枚举值value,以,分开,枚举值改变一定得及时更新";
+    Class<? extends CheckEnumInterface> value();
     String name() default "字段名称";
 }

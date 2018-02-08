@@ -11,6 +11,7 @@
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/utils/StringUtils.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/consts/ConstArrays.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/consts/CheckFieldConst.java
+/Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/interfaces/CheckEnumInterface.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/annotation/CheckField.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/utils/IdCardUtil.java
 /Users/wenchao.wang/IdeaProjects/personal/lios/lios-check/src/main/java/com/lios/check/annotation/AmountLimit.java

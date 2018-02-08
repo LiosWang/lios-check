@@ -8,6 +8,7 @@ com/lios/check/utils/StringUtils.class
 com/lios/check/utils/MobileUtil.class
 com/lios/check/annotation/IsInt.class
 com/lios/check/utils/IdCardUtil.class
+com/lios/check/interfaces/CheckEnumInterface.class
 com/lios/check/annotation/NotEmpty.class
 com/lios/check/enums/CheckEnum.class
 com/lios/check/consts/ConstCharacters.class
