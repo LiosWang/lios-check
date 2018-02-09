@@ -10,11 +10,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author jared
- * @Description: String工具类
- * @date Nov 5, 2014 3:36:54 PM
- */
 public class StringUtils {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
