@@ -1,9 +1,11 @@
+/*
 package com.lios.check.dto;
 
 import com.lios.check.annotation.*;
 import com.lios.check.enums.GenderEnum;
 import lombok.Data;
 
+*/
 /**
  * @author wenchao.wang
  * @description
@@ -14,7 +16,8 @@ import lombok.Data;
  * @see IsIdCard
  * @see IsNumber
  * @see EnumValue
- */
+ *//*
+
 @Data
 public class OpenOrderBaseInfoDTO {
 
@@ -27,7 +30,7 @@ public class OpenOrderBaseInfoDTO {
 
     @NotEmpty(value = "gender")
     @IsInt(value = "gender")
-    @EnumValue(value = GenderEnum.class,name = "gender")
+    @EnumValue(value = GenderEnum.class, name = "gender")
     private String gender;
     @IsInt(value = "user_education")
     private String userEducation;
@@ -45,7 +48,7 @@ public class OpenOrderBaseInfoDTO {
     @IsIdCard(value = "id_card")
     private String idCard;
 
-    @NotEmpty(value ="registed")
+    @NotEmpty(value = "registed")
     private String registed;
 
     @NotEmpty(value = "hukou_type")
@@ -86,3 +89,4 @@ public class OpenOrderBaseInfoDTO {
     @IsInt(value = "career_type")
     private String careerType;
 }
+*/

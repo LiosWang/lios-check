@@ -1,16 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>com.lios</groupId>
-        <artifactId>lios</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>lios-check</artifactId>
     <packaging>jar</packaging>
     <groupId>com.lios</groupId>
     <name>lios-check</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,18 +28,6 @@
             <groupId>org.apache.commons</groupId>
             <version>3.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>4.3.10.RELEASE</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-lang3</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
     </dependencies>
 
     <distributionManagement>
@@ -61,7 +44,7 @@
     </distributionManagement>
 
     <build>
-        <finalName>push-service</finalName>
+        <finalName>lios-check</finalName>
         <!--<sourceDirectory>src/main/java/com/fqgj/jkzj/push/service</sourceDirectory>-->
         <plugins>
             <plugin>
@@ -99,6 +82,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

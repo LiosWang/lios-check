@@ -3,7 +3,6 @@ import com.lios.check.consts.ConstArrays;
 import com.lios.check.consts.ConstCharacters;
 import com.lios.check.consts.ConstStrings;
 import org.apache.commons.lang3.ArrayUtils;
-import org.springframework.util.CollectionUtils;
 
 import java.nio.ByteBuffer;
 import java.text.SimpleDateFormat;

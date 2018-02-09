@@ -1,5 +1,6 @@
 com/lios/check/annotation/IsMobile.class
 com/lios/check/consts/ConstArrays.class
+com/lios/check/utils/CollectionUtils.class
 com/lios/check/service/CheckFieldService.class
 com/lios/check/consts/ConstStrings.class
 com/lios/check/annotation/EnumValue.class
@@ -8,8 +9,9 @@ com/lios/check/utils/StringUtils.class
 com/lios/check/utils/MobileUtil.class
 com/lios/check/annotation/IsInt.class
 com/lios/check/utils/IdCardUtil.class
+com/lios/check/handle/Handle.class
 com/lios/check/interfaces/CheckEnumInterface.class
-com/lios/check/dto/OpenOrderBaseInfoDTO.class
+com/lios/check/handle/CheckHandle.class
 com/lios/check/annotation/NotEmpty.class
 com/lios/check/enums/CheckEnum.class
 com/lios/check/consts/ConstCharacters.class
@@ -18,3 +20,4 @@ com/lios/check/enums/GenderEnum.class
 com/lios/check/annotation/IsNumber.class
 com/lios/check/annotation/CheckField.class
 com/lios/check/consts/CheckFieldConst.class
+com/lios/check/utils/ArrayUtils.class
